@@ -8,21 +8,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Contactanos</title>
 </head>
 <body>
     <header>
-            <img class="logo" src="../recursos/logotransparente.png" alt="Logo de Ohana">
-        <nav class="header__navegacion">
-            <ul>
-                <li class="header__navegacionLista"> <a class="header__navegacionLista" href="../index.html">Inicio</a> </li>
-                <li class="header__navegacionLista"> <a class="header__navegacionLista"  href="tienda.html">Tienda</a></li>
-                <li class="header__navegacionLista"><a class="header__navegacionLista" href="novedades.html">Novedades</a></li>
-                <li class="header__navegacionLista"><a class="header__navegacionLista" href="nosotros.html">Nosotros</a></li>
-                <li class="header__navegacionLista"><a  class="header__navegacionLista" href="contactanos.html">Contactanos</a></li>
-            </ul>
-        </nav>    
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../recursos/logotransparente.png" alt="logo de ohana" width="70" height="70" class="d-inline-block align-text-center">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  </div>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tienda.html">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="novedades.html">Novedades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contactanos.html">Contactanos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <section class="seccioncontacto">
@@ -76,5 +97,7 @@
         </div>
         <p class="footer__texto">Copyright© 2022 Thomas Marrazzo - Todos los derechos reservados - Defensa de las y los consumiciones</p>
     </footer>
+     <!--Script bootstrap-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -5,20 +5,25 @@
 }
 /* css index*/
 
-header{
+.titulo__nav{
+    color:rgb(166, 77, 124);
+}
+.navegacion{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: end;
 }
 li{
     text-decoration: none;
-    display: inline-block;
     padding: 0.8rem;
 }
 .header__navegacionLista{
     font-size: 19px;
     text-decoration: none;
     color:rgb(166, 77, 124);
+}
+.nav-link{
+    color:rgb(166, 77, 124);
+    font-size: 19px ;
 }
 .logo{
     width: 9vw;
@@ -134,8 +139,14 @@ footer{
     margin-top: 3rem;
 }
 
-.footer__redes img{
+.footer__instagram{
     width: 2.5vw;
+}
+.footer__facebook{
+    width: 2.5vw;
+}
+.footer__whatsapp{
+    width: 4.3vw;
 }
 .footer__redes img:hover{
     transform: scale(1.3);
@@ -437,24 +448,20 @@ align-items: center;
 
 @media (min-width: 320px) and (max-width: 540px){
     /*media de index*/
-header{
-    display: flex;
-    flex-direction: column;
-    height: 65vh;
-    }
-li{
-    align-items: center;
-    text-decoration: none;
-    display: inline;
-    padding: 0.8rem;
-}
-.header__navegacionLista{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 19px;
-    text-decoration: none;
+.nav-link{
     color:rgb(166, 77, 124);
+    font-size: 19px ;
+}
+.nav-item{
+    text-align: center;
+}
+.navegacion{
+    display: flex;
+    justify-content: center;
+}
+li{
+    text-decoration: none;
+    padding: 0.8rem;
 }
 li:hover{
     transform: scale(1.1);
@@ -546,7 +553,7 @@ li:hover{
 }
 .revendedores__texto{
     width: 60vw;
-    height: 50vh;
+    height: 75vh;
     text-align: center;
     line-height: 28px;
 }
@@ -558,14 +565,21 @@ footer{
     margin-top: 3rem;
 }
 
-.footer__redes img{
-    width: 5vw;
-    margin-bottom: 0.5rem;
-}
+
 .footer__redes img:hover{
     transform: scale(1.3);
 }
+.footer__instagram{
+    width: 3vw;
+    margin-bottom: 0.5rem;
+}
+.footer__facebook{
+    width: 3vw;
+    margin-bottom: 0.5rem;
+}
 .footer__whatsapp{
+    width: 6.8vw;
+    margin-bottom: 0.5rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
@@ -853,22 +867,19 @@ option{
 
 @media (min-width: 541px) and (max-width: 720px){
     /*empieza media index*/
-header{
-    display: flex;
-    align-items: center;
-}    
-li{
-    padding: 0.3rem;
-}
-.header__navegacionLista{
-    display: inline;
-    padding: 0.3rem;
-    font-size: 14px;
-    text-decoration: none;
+.nav-link{
     color:rgb(166, 77, 124);
+    font-size: 19px ;
 }
-.logo{
-    width: 9vw;
+.nav-item{
+    text-align: center;
+    }
+.navegacion{
+    display: flex;
+    justify-content: center;
+}
+li{
+    padding: 0.8rem;
 }   
 .portada{
     background-image: url(../recursos/titulo\ .jpg);
@@ -913,9 +924,10 @@ li{
 .novedades__texto{
     border-style: inset;
     padding: 2rem;
-    font-size: 13px;
-    width: 35vw;
-    height: 35vh;
+    text-align: center;
+    font-size: 12px;
+    width: 40vw;
+    height: 65vh;
     line-height: 30px;
 }
 .novedades__contenido{
@@ -941,8 +953,8 @@ li{
     border-style: inset;
     padding: 2rem;
     font-size: 13px;
-    width: 35vw;
-    height: 30vh;
+    width: 50vw;
+    height: 45vh;
     line-height: 30px;
 }
 .revendedores__contenido{
@@ -956,12 +968,17 @@ footer{
     text-align: center;
     margin-top: 2rem;
 }
-.footer__redes img{
-    width: 4vw;
-    margin-bottom: 0.5rem;
-}
 .footer__redes img:hover{
     transform: scale(1.3);
+}
+.footer__instagram{
+    width: 3vw;
+}
+.footer__facebook{
+    width: 3vw;
+}
+.footer__whatsapp{
+     width: 5.7vw;
 }
 .footer__whatsapp{
     padding-left: 0.5rem;
