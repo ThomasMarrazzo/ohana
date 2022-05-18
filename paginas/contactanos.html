@@ -89,14 +89,19 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer__redes">
-            <a href="https://www.instagram.com/ohanaaromas/"><img class="footer__instagram"src="../recursos/instagram.png" alt="logo instagram"></a>
-            <a href="https://wa.me/c/5492923565769"><img class="footer__whatsapp" src="../recursos/whatsapp.png"alt="logo whatsapp"></a>
-            <a href="https://www.facebook.com/OHANAAromas/"><img class="footer__facebook" src="../recursos/facebook.png" alt="logo facebook"></a>
-        </div>
-        <p class="footer__texto">Copyright© 2022 Thomas Marrazzo - Todos los derechos reservados - Defensa de las y los consumiciones</p>
-    </footer>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer__redes">
+          <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-muted footer__texto">Copyright© 2022 Thomas Marrazzo - Todos los derechos reservados - Defensa de las y los consumiciones</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="https://wa.me/c/5492923565769"><img src="../recursos/whatsapp.png" class="bi" width="30" height="30"/><use xlink:href="#whatsapp"></use></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/ohanaaromas/"><img src="../recursos/instagram.png" class="bi" width="30" height="30"/><use xlink:href="#instagram"></use></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/OHANAAromas/"><img src="../recursos/facebook.png" class="bi" width="30" height="30"/><use xlink:href="#facebook"></use></a></li>
+          </ul>
+        </footer>
+      </div>
      <!--Script bootstrap-->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

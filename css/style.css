@@ -16,11 +16,6 @@ li{
     text-decoration: none;
     padding: 0.8rem;
 }
-.header__navegacionLista{
-    font-size: 19px;
-    text-decoration: none;
-    color:rgb(166, 77, 124);
-}
 .nav-link{
     color:rgb(166, 77, 124);
     font-size: 19px ;
@@ -92,7 +87,7 @@ li:hover{
 .novedades__subtitulo{
     text-align: center;
     font-size: 25px;
-    font-weight:900;
+    font-weight:500;
     margin-bottom: 1rem;
 }
 .novedades__texto{
@@ -558,26 +553,20 @@ footer{
     margin-top: 3rem;
 }
 
-
+.footer__redes{
+    display: flex;
+    flex-direction: column;
+}
 .footer__redes img:hover{
     transform: scale(1.3);
 }
-.footer__instagram{
-    width: 3vw;
-    margin-bottom: 0.5rem;
-}
-.footer__facebook{
-    width: 3vw;
-    margin-bottom: 0.5rem;
-}
-.footer__whatsapp{
-    width: 6.8vw;
-    margin-bottom: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+footer img{
+    width: 30px;
 }
 .footer__texto{
     font-size: 10px;
+    align-items: center;
+    text-align: center;
 }
 /*Termina index*/
 /*Empieza tienda*/
@@ -953,23 +942,16 @@ li{
 }
 footer{
     text-align: center;
-    margin-top: 2rem;
+}
+.footer__redes{
+    display: flex;
+    flex-direction: column;
+}
+footer img{
+    width: 30px;
 }
 .footer__redes img:hover{
     transform: scale(1.3);
-}
-.footer__instagram{
-    width: 3vw;
-}
-.footer__facebook{
-    width: 3vw;
-}
-.footer__whatsapp{
-     width: 5.7vw;
-}
-.footer__whatsapp{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
 }
 .footer__texto{
     font-size: 12px;
