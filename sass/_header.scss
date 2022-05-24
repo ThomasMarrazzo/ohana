@@ -1,0 +1,16 @@
+.navegacion{
+    display: flex;
+    justify-content: end;
+}
+li{
+    text-decoration: none;
+    padding: 0.8rem;
+    &:hover{
+        transform: scale(1.1);
+        transition: all 1s;
+    }
+}
+.nav-link{
+    color:$color-navLink;
+    font-size: 19px ;
+}

@@ -1,0 +1,10 @@
+.footer{
+    text-align: center;
+    margin-top: 3rem;
+    &__redes img:hover{
+    transform: scale(1.3);
+    }
+    &__texto{
+        font-size: 12px;
+    }
+} 
