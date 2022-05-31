@@ -277,7 +277,7 @@ option {
   text-align: center; }
   .segundaseccion__subtitulo {
     margin-top: 3rem;
-    font-size: 30px;
+    font-size: 35px;
     padding-bottom: 2rem; }
   .segundaseccion__contenido {
     display: flex;
@@ -299,6 +299,9 @@ option {
   .terceraseccion__contenido div {
     display: flex;
     justify-content: center; }
+  .terceraseccion__subsubtitulo {
+    font-size: 27px;
+    margin-top: 20px; }
   .terceraseccion__caja {
     align-items: center; }
   .terceraseccion__imagen {
