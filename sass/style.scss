@@ -1,4 +1,5 @@
 @import "variables";
+@import "helpers";
 @import "header";
 @import "footer";
 
@@ -51,9 +52,7 @@ body{
     }
 }
 .intro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include intro;
     &__bloque{
         align-items: center;
     }
@@ -230,9 +229,8 @@ option{
 }
 .bloqueUno{
     grid-area: bloqueUno;
-    display: flex;
+    @include navegacion;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 .bloqueDos{

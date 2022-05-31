@@ -1,0 +1,9 @@
+@mixin navegacion {
+    display: flex;
+    justify-content: center;
+}
+@mixin intro {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}

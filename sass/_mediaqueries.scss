@@ -7,8 +7,7 @@
     text-align: center;
 }
 .navegacion{
-    display: flex;
-    justify-content: center;
+    @include navegacion;
 }
 li{
     text-decoration: none;
@@ -23,10 +22,9 @@ li{
     background-image: url(../recursos/titulo.jpg);
     background-size: contain;
     background-repeat:round;
-    display: flex;
+    @include navegacion;
     flex-direction: column;
     height: 43vh;
-    justify-content: center;
     align-items: center;
     &__texto{
         color:$color-textoPortada;
@@ -52,9 +50,7 @@ li{
 
 }
 .intro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include intro;
     &__bloque{
         align-items: center;
     }
@@ -145,8 +141,7 @@ li{
 .perfuminas__bloque{
     grid-area: perfuminas__bloque;
     margin-right: 1.5rem;
-    display: flex;
-    justify-content: center;
+    @include navegacion;
 
 }
 .perfuminas__bloqueDos{
@@ -233,9 +228,8 @@ option{
     }
 }
 .bloqueUno{
-    display: flex;
+    @include navegacion;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 .bloqueDos{
@@ -309,8 +303,7 @@ option{
         text-align: center;
     }
     &__contenido div{
-        display: flex;
-        justify-content: center;
+        @include navegacion;
     }
     &__imagen{
         width: 15vw;
@@ -330,9 +323,9 @@ option{
     align-items: center;
     &__imagen{
         margin-top: 3rem;
-        width: 100vw;
+        width: 90vw;
+        border-radius: 3px;
     }
-    
     &__bloque1{
         display: flex;
         flex-direction: column;
@@ -394,8 +387,7 @@ option{
     text-align: center;
     }
 .navegacion{
-    display: flex;
-    justify-content: center;
+    @include navegacion;
 }
 li{
     padding: 0.8rem;
@@ -404,10 +396,9 @@ li{
     background-image: url(../recursos/titulo.jpg);
     background-size: contain;
     background-repeat:round;
-    display: flex;
+    @include navegacion;
     flex-direction: column;
     height: 80vh;
-    justify-content: center;
     align-items: center;
     &__texto{
         color:$color-textoPortada;
@@ -429,9 +420,7 @@ li{
     }
 }
 .intro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include intro;
     &__bloque{
         align-items: center;
     }
@@ -521,16 +510,14 @@ li{
     &__bloque{
         grid-area: perfuminas__bloque;
         margin-right: 1.5rem;
-        display: flex;
-        justify-content: center;
+        @include navegacion;
     
     }
     &__bloqueDos{
         grid-area: perfuminas__bloqueDos;
         margin-left: 1.5rem;
         margin-right: 1.5rem;
-        display: flex;
-        justify-content: center;
+        @include navegacion;
     }
     &__imagen{
         width:80vw;
@@ -611,9 +598,8 @@ option{
     }
 }
 .bloqueUno{
-    display: flex;
+    @include navegacion;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 .bloqueDos{
@@ -707,10 +693,10 @@ option{
     display:flex;
     &__imagen{
         margin-top: 3rem;
-        width: 100vw;
+        width: 88vw;
         height: 130vh;
+        border-radius: 4px;
     }
-    
     &__bloque1{
         display: flex;
         flex-direction: column;
