@@ -13,6 +13,9 @@
 body{
     background-color: $color-body;
 }
+.header__logo{
+    width: 75px;
+}
 .portada{
     background-image: url(../recursos/titulo.jpg);
     background-size: contain;
@@ -67,6 +70,7 @@ body{
     }
     &__texto{
         font-size: 19px;
+        line-height: 30px;
     }
 }
 .revendedores{
@@ -102,7 +106,7 @@ body{
     }
     &__texto p{
         font-size: 18px;
-        line-height: 35px;
+        line-height: 30px;
         font-weight: 500;
         align-self: center;
         width: 40vw;

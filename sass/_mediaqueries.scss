@@ -1,5 +1,8 @@
 @media (min-width: 320px) and (max-width: 540px){
     /*media de index*/
+.header__logo{
+    width: 70px;
+}
 .nav-link{
     font-size: 19px ;
 }
@@ -441,7 +444,7 @@ li{
 .revendedores{
     text-align: center;
     &__titulo{
-        font-size: 23px;
+        font-size: 25px;
         display: inline-block;
         margin-top: 30px;
     }

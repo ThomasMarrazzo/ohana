@@ -30,6 +30,9 @@ li {
 body {
   background-color: rgba(128, 128, 128, 0.062); }
 
+.header__logo {
+  width: 75px; }
+
 .portada {
   background-image: url(../recursos/titulo.jpg);
   background-size: contain;
@@ -78,7 +81,8 @@ body {
     text-align: center;
     width: 80vw; }
   .intro__texto {
-    font-size: 19px; }
+    font-size: 19px;
+    line-height: 30px; }
 
 .revendedores {
   text-align: center; }
@@ -107,7 +111,7 @@ body {
     display: flex; }
   .revendedores__texto p {
     font-size: 18px;
-    line-height: 35px;
+    line-height: 30px;
     font-weight: 500;
     align-self: center;
     width: 40vw; }
@@ -361,6 +365,8 @@ option {
 /*termina css contactanos*/
 @media (min-width: 320px) and (max-width: 540px) {
   /*media de index*/
+  .header__logo {
+    width: 70px; }
   .nav-link {
     font-size: 19px; }
   .nav-item {
@@ -696,7 +702,7 @@ option {
   .revendedores {
     text-align: center; }
     .revendedores__titulo {
-      font-size: 23px;
+      font-size: 25px;
       display: inline-block;
       margin-top: 30px; }
     .revendedores__titulo::after, .revendedores__titulo::before {
