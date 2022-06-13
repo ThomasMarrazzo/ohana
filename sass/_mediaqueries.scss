@@ -22,35 +22,19 @@ li{
 }
 .portada{
     margin-top: 0.9rem;
-    background-image: url(../recursos/titulo.jpg);
+    background: linear-gradient($opacidad-portada, $opacidad-portada), url(../recursos/titulo.jpg);
     background-size: contain;
     background-repeat:round;
     @include navegacion;
-    flex-direction: column;
-    height: 43vh;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    &__texto{
-        color:$color-textoPortada;
-        background-color: $color-fondoBoton;
-        border-radius: 5px;
-        font-size: 13px;
-        padding: 0.2rem;
+    & h1{
+        font-size: 30px;
+        color: $color-tituloNovedades;
+        font-weight: 700;
     }
-    &__boton{
-        padding: 0.1rem;
-        font-size: 10px;
-        margin-top: 1.4rem;
-        border-radius: 7px;
-        background-color: $color-fondoBoton;
-        color: $color-textoPortada;        
-    }
-    &__boton:hover{
-        transform:scalex(1.1);
-        transition: all 0.2s;
-        background-color:$color-textoPortada;
-        color: $color-textoBoton;
-    }
-
 }
 .intro{
     @include intro;
@@ -136,72 +120,69 @@ li{
                         "perfuminas__bloqueDos" 
                         "perfuminas__contenidoDos";
 }
-.perfuminas__portada{
-    grid-area: perfuminas__portada;
-}
-.perfuminas__titulo{
-    text-align: center;
-    font-size: 25px;
-}
-.perfuminas__bloque{
-    grid-area: perfuminas__bloque;
-    margin-right: 1.5rem;
-    @include navegacion;
-
-}
-.perfuminas__bloqueDos{
-    grid-area: perfuminas__bloqueDos;
-    margin-left: 1.5rem;
-}
-.perfuminas__imagen{
-    width:80vw;
-}
-.perfuminas__contenido{
-    grid-area: perfuminas__contenido;
-    display: flex;
-    flex-direction: column;
-    margin-top: 3rem;
-    margin-right: 1.5rem;
-}
-.perfuminas__contenidoDos{
-    grid-area: perfuminas__contenidoDos;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-right: 1.5rem;
-}
-.perfuminas__subtitulo{
-    padding-bottom: 13px;
-    font-size: 23px;
-    align-self: center;
-}
-
-.perfuminas__montoMetodo{
-    padding-top: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.perfuminas__monto{
-    font-size: 22px;
-}
-.perfuminas__metodo{
-    font-size: 17px;
+.perfuminas{
+    &__portada{
+        grid-area: perfuminas__portada;
+    }
+    &__titulo{
+        text-align: center;
+        font-size: 25px;
+    }
+    &__bloque{
+        grid-area: perfuminas__bloque;
+        margin-right: 1.5rem;
+        @include navegacion;
     
-}
-.perfuminas__subsubtitulo{
-    font-size: 20px;
-    padding-top: 1.5rem;
-}
-.perfuminas__selector{
-    width: 90vw;
-    height: 6vh;
-}
-.perfuminas__boton{
-    margin-top: 2rem;
-    padding-right: 2rem;
-    font-size: 13px;
-    padding-left: 2rem;
+    }
+    &__bloqueDos{
+        grid-area: perfuminas__bloqueDos;
+        margin-left: 1.5rem;
+    }
+    &__imagen{
+        width:80vw;
+    }
+    &__contenido{
+        grid-area: perfuminas__contenido;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
+    &__contenidoDos{
+        grid-area: perfuminas__contenidoDos;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
+    &__subtitulo{
+        padding-bottom: 13px;
+        font-size: 23px;
+        align-self: center;
+    }
+    
+    &__montoMetodo{
+        padding-top: 1rem;
+    }
+    &__monto{
+        font-size: 22px;
+    }
+    &__subsubtitulo{
+        font-size: 20px;
+        padding-top: 1.5rem;
+    }
+    &__selector{
+        width: 100%;
+        height: 6vh;
+    }
+    &__boton{
+        margin-top: 2rem;
+        padding-right: 2rem;
+        font-size: 13px;
+        padding-left: 2rem;
+    }
 }
 option{
     font-size: 14px;
@@ -232,50 +213,24 @@ option{
         font-size: 14px;
     }
 }
-.bloqueUno{
-    @include navegacion;
-    flex-direction: column;
-    align-items: center;
-}
-.bloqueDos{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.bloqueTres{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.bloqueCuatro{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.bloqueCinco{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.bloqueSeis{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.tarjetas{
+    width: 62vw
 }
 .primerfila__imagen{
     width: 62vw;
-    padding-top: 30px;
 }
 .primerfila__texto{
     text-align: center;
     width: 62vw;
-    font-size: 15px;
+}
+.primerafila__frase{
+    font-size: 16px;
 }
 .primerfila__subtitulo{
     text-align: center;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 600;
     padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 /*termina novedades*/
 
@@ -302,7 +257,7 @@ option{
     align-items: center;
     &__contenido{
         width: 70vw;
-        height: 25vh;
+        height: 100%;
         margin-top: 1.7rem;
         justify-content: center;
         text-align: center;
@@ -311,12 +266,19 @@ option{
         @include navegacion;
     }
     &__imagen{
-        width: 15vw;
+        margin-top: 1rem;
+        width: 18vw;
+    }
+    &__subsubtitulo{
+        font-size: 20px;
     }
     &__texto{
         padding-top: 20px;
         line-height: 30px;
         font-size: 15px;
+        color: #646464;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 }
 
@@ -334,7 +296,7 @@ option{
     &__bloque1{
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 60vw;
         text-align: center;
     }
     &__logo{
@@ -347,14 +309,26 @@ option{
     }
     
     &__input{
+        font-size: 14px;
         margin-bottom:35px;
         height: vh;
         width: 60vw;
     }
+    &__seleccion{
+        justify-content: space-between;
+    }
     &__label{
+        font-size: 13px;
         padding-right: 1rem;
     }
+    &__selector{
+        font-size: 13px;
+        & option{
+            font-size: 13px;
+        }
+    }
     &__textarea{
+        font-size: 14px;
         width: 60vw;
         height: 15vh;
         margin-top: 2rem;
@@ -375,6 +349,8 @@ option{
         padding-bottom: 1.5rem;
     }
     &__texto{
+        margin-left: 15px;
+        margin-right: 15px;
         line-height: 30px;
         font-size: 13px;
     }
@@ -398,30 +374,17 @@ li{
     padding: 0.8rem;
 }   
 .portada{
-    background-image: url(../recursos/titulo.jpg);
+    background: linear-gradient($opacidad-portada, $opacidad-portada), url(../recursos/titulo.jpg);
     background-size: contain;
     background-repeat:round;
-    @include navegacion;
-    flex-direction: column;
-    height: 80vh;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    &__texto{
-        color:$color-textoPortada;
-        background-color: $color-fondoBoton;
-        font-size: 17px;
-        border-radius: 5px;
-    }
-    &__boton{
-        padding: 0.5rem;
-        font-size: 13px;
-        margin-top: 2rem;
-    }
-    &__contenido{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 60vh;
+    & h1{
+        font-size: 40px;
+        color: $color-tituloNovedades;
+        font-weight: 600;
     }
 }
 .intro{
@@ -534,6 +497,7 @@ li{
         display: flex;
         flex-direction: column;
         margin-top: 3rem;
+        margin-left: 1.5rem;
         margin-right: 1.5rem;
     }
     &__contenidoDos{
@@ -542,6 +506,7 @@ li{
         flex-direction: column;
         margin-top: 50px;
         margin-right: 1.5rem;
+        margin-left: 1.5rem;
     }
     &__subtitulo{
         padding-bottom: 13px;
@@ -551,23 +516,16 @@ li{
     
     &__montoMetodo{
         padding-top: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
     &__monto{
         font-size: 23px;
-    }
-    &__metodo{
-        font-size: 19px;
-        
     }
     &__subsubtitulo{
         font-size: 22px;
         padding-top: 1.5rem;
     }
     &__selector{
-        width: 90vw;
+        width: 100%;
         height: 6vh;
     }
     
@@ -604,50 +562,23 @@ option{
         font-size: 17px;
     }
 }
-.bloqueUno{
-    @include navegacion;
-    flex-direction: column;
-    align-items: center;
-}
-.bloqueDos{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.bloqueTres{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.bloqueCuatro{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.bloqueCinco{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.bloqueSeis{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.tarjetas{
+    width: 40vw;
 }
 .primerfila__imagen{
     width: 40vw;
-    padding-top: 30px;
 }
 .primerfila__texto{
     text-align: center;
     width: 40vw;
-    font-size: 15px;
+}
+.primerafila__frase{
+    font-size: 16px;
 }
 .primerfila__subtitulo{
-    text-align: center;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 19px;
     padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 /*termina media novedades*/
 /*empieza media nosotros*/
@@ -671,7 +602,7 @@ option{
     align-items: center;
     &__contenido{
         width: 80vw;
-        height: 30vh;
+        height: 100%;
         margin-top: 2rem;
         justify-content: center;
         text-align: center;
@@ -681,15 +612,20 @@ option{
         justify-content: center;
     }
     &__imagen{
+        margin-top: 10px;
         width: 15vw;
     }
     &__subsubtitulo{
-        margin-top: 0.5rem;
+        margin-top: 10px;
+        font-size: 24px;
     }
     &__texto{
         padding-top: 20px;
         line-height: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
         font-size: 17px;
+        color: #646464;
     }
 }
 
@@ -707,7 +643,7 @@ option{
     &__bloque1{
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 65vw;
         text-align: center;
     }
     &__logo{
@@ -718,17 +654,16 @@ option{
         padding-bottom: 30px;
         text-align: center;
     }
-    
     &__input{
         margin-bottom:35px;
-        height: vh;
-        width: 60vw;
+        height: 5vh;
+        width: 65vw;
     }
-    &__label{
-        padding-right: 1rem;
+    &__seleccion{
+        justify-content: space-between;
     }
     &__textarea{
-        width: 60vw;
+        width: 65vw;
         height: 15vh;
         margin-top: 2rem;
     }
@@ -749,6 +684,8 @@ option{
         padding-bottom: 1.5rem;
     }
     &__texto{
+        margin-left: 15px;
+        margin-right: 15px;
         line-height: 30px;
         font-size: 15px;
     }
