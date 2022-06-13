@@ -47,7 +47,7 @@ body{
         margin-top: 2rem;
     }
     &__texto{
-        font-size: 19px;
+        font-size: 18px;
         line-height: 30px;
     }
 }
@@ -77,7 +77,7 @@ body{
     &__bloque{
         display: flex;
         justify-content: space-around;
-        margin-top: 4rem;
+        margin-top: 3rem;
     }
     &__texto{
         display: flex;
@@ -85,7 +85,6 @@ body{
     &__texto p{
         font-size: 18px;
         line-height: 30px;
-        font-weight: 500;
         align-self: center;
         width: 40vw;
     }
@@ -313,7 +312,6 @@ option{
         line-height: 30px;
         width: 80vw;
     }
-
 }
 .terceraseccion{
     display: flex;
@@ -355,9 +353,6 @@ option{
         color: #646464;
     }
 }
-
-
-
 /*termina css nosotros*/
 /*empieza css contatanos*/
 .seccioncontacto{
@@ -372,7 +367,6 @@ option{
     
     &__bloque1{
         margin-top: 3rem;
-        width: 40vw;
         text-align: center;
         height: 100%;
         width: 35vw;
@@ -411,7 +405,6 @@ option{
        justify-content: space-between;
     }
 }
-
 .segundobloque{
     margin-top: 5rem;
     display: flex;
@@ -422,6 +415,7 @@ option{
         padding-bottom: 1rem;
     }
     &__texto{
+        font-size: 17px;
         line-height: 30px;
     }
 }

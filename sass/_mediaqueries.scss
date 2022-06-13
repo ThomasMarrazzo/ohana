@@ -31,9 +31,9 @@ li{
     justify-content: center;
     align-items: center;
     & h1{
-        font-size: 30px;
+        font-size: 35px;
         color: $color-tituloNovedades;
-        font-weight: 700;
+        font-weight: 600;
     }
 }
 .intro{
@@ -62,6 +62,7 @@ li{
     &__titulo{
         font-size: 20px;
         display: inline-block;
+        font-weight: 500;
         margin-top: 25px;
     }
     &__titulo::after,&__titulo::before{
@@ -81,7 +82,7 @@ li{
         margin-top:1.3rem;
     }
     &__texto p{
-        font-size: 15px;
+        font-size: 14px;
         width: 84vw;
         text-align: center;
         line-height: 26px;
@@ -210,7 +211,9 @@ option{
     
     &__texto{
         text-align: center;
-        font-size: 14px;
+        font-size: 13px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 .tarjetas{
@@ -273,12 +276,11 @@ option{
         font-size: 20px;
     }
     &__texto{
-        padding-top: 20px;
+        margin-top: 15px;
         line-height: 30px;
         font-size: 15px;
-        color: #646464;
-        padding-right: 10px;
-        padding-left: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -382,7 +384,7 @@ li{
     justify-content: center;
     align-items: center;
     & h1{
-        font-size: 40px;
+        font-size: 45px;
         color: $color-tituloNovedades;
         font-weight: 600;
     }
@@ -404,7 +406,7 @@ li{
         margin-top: 2rem;
     }
     &__texto{
-        font-size: 16px;
+        font-size: 15px;
         line-height: 23px;
     }
 }
@@ -424,17 +426,18 @@ li{
     &__bloque{
         display: flex;
         flex-direction: column;
-        margin-top: 2rem;
+        margin-top: 1rem;
         align-items: center;
     }
     &__texto{
         display: flex;
-        margin-top:1.3rem
+        margin-top:1.3rem;
     }
     &__texto p{
-        font-size: 16px;
+        font-size: 15px;
         width: 80vw;
         line-height: 25px;
+        text-align: center;
     }
 }
 .imagen{
@@ -442,7 +445,6 @@ li{
     border-radius: 3px;
 }
 .footer{
-
     &__redes{
         display: flex;
         flex-direction: column-reverse;
@@ -559,6 +561,8 @@ option{
     
     &__texto{
         text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
         font-size: 17px;
     }
 }
@@ -573,7 +577,9 @@ option{
     width: 40vw;
 }
 .primerafila__frase{
-    font-size: 16px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .primerfila__subtitulo{
     font-weight: 600;
@@ -590,6 +596,7 @@ option{
         padding-bottom: 1rem;
     }
     &__texto{
+        font-size: 15px;
         line-height: 30px;   
         width: 85%;
     }
@@ -601,9 +608,9 @@ option{
     margin-top: 1rem;
     align-items: center;
     &__contenido{
-        width: 80vw;
+        width: 60vw;
         height: 100%;
-        margin-top: 2rem;
+        margin-top: 1rem;
         justify-content: center;
         text-align: center;
     }
@@ -624,8 +631,7 @@ option{
         line-height: 30px;
         padding-left: 15px;
         padding-right: 15px;
-        font-size: 17px;
-        color: #646464;
+        font-size: 15px;
     }
 }
 
@@ -659,8 +665,14 @@ option{
         height: 5vh;
         width: 65vw;
     }
-    &__seleccion{
-        justify-content: space-between;
+    &__label{
+        font-size: 14px;
+    }
+    &__selector{
+        font-size: 14px;
+        & option{
+            font-size: 14px;
+        }
     }
     &__textarea{
         width: 65vw;
@@ -674,7 +686,6 @@ option{
         font-size: 14px;
     }
 }
-
 .segundobloque{
     margin-top: 5rem;
     width: 100vw;
@@ -687,7 +698,220 @@ option{
         margin-left: 15px;
         margin-right: 15px;
         line-height: 30px;
+        font-size: 14px;
+    }
+}
+}
+
+@media (min-width: 721px) and (max-width: 1080px){
+ /*index*/
+ .nav-link{
+    font-size: 19px ;
+}
+.nav-item{
+    text-align: center;
+}
+.navegacion{
+    @include navegacion;
+}
+li{
+    text-decoration: none;
+    padding: 0.8rem;
+    &:hover{
+        transform: scale(1.1);
+        transition: all 1s;
+    }
+}
+.portada{
+    & h1{
+        font-size: 65px;
+        font-weight: 800;
+    }
+}
+.intro{
+    &__imagen{
+        width: 30vw;
+    }
+    &__texto{
+        font-size: 15px;
+        line-height: 28px;
+    }
+}
+.revendedores{
+    text-align: center;
+    &__titulo{
+        font-size: 30px;
+        font-weight: 500;
+        display: inline-block;
+        margin-top: 30px;
+    }
+    &__titulo::after,&__titulo::before{
+        content: "";
+        height: 0px;
+        margin-top: 0.6em;
+    }
+    &__bloque{
+        margin-top: 2rem;
+    }
+    &__texto p{
+        font-size: 15px;
+        line-height: 27px;
+    }
+}
+.footer{
+    &__texto{
+        font-size: 10px;
+    }
+}
+/*termina Index*/
+/*Tienda*/
+.perfuminas{
+    &__imagen{
+        width:500px;
+        margin-top: 3rem;
+    }
+    &__subtitulo{
+        padding-bottom: 15px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    &__monto{
+        font-size: 23px;
+        font-weight: 500;
+    }
+    &__subsubtitulo{
+        font-size: 20px;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    &__selector{
+        width: 45vw;
+        height: 6vh;
+        & option{
+            font-size: 15px;
+        }
+    }
+}
+/*termina Tienda*/
+/*Novedades*/
+.tarjetas{
+    width: 27vw;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    border-radius: 7px;
+    &:hover{
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+        transform: translateY(-3%);
+        transition: all 0.5s ease;
+    }
+}
+.primerfila__imagen{
+    width: 27vw;
+    border-radius: 4px;
+}
+.primerfila__texto{
+    width: 27vw;
+    & a{
+        text-decoration: none;
+        color: $background-tituloNovedades;
+        border: 1px solid $background-tituloNovedades;
+        border-radius: 4px;
+        padding: 7px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    & a:hover{
+        background-color: $background-tituloNovedades;
+        color: $color-tituloNovedades;
+    }
+}
+.primerfila__subtitulo{
+    font-weight: 600;
+    font-size: 20px;
+}
+.primerafila__frase{
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*Terimna novedades*/
+/*Nosotros*/
+.segundaseccion{
+    &__subtitulo{
+        padding-bottom: 1.5rem;
+    }
+    &__texto{
+        line-height: 30px;
+        width: 80vw;
         font-size: 15px;
     }
 }
+.terceraseccion{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    ;
+    &__contenido{
+        width: 25vw;
+    }
+    &__subsubtitulo{
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    &__imagen{
+        margin-top: 20px;
+        width: 10vw;
+    }
+    &__texto{
+        margin-left: 8px;
+        margin-right: 8px;
+        font-size: 14px;
+        padding-top: 20px;
+        line-height: 25px;
+    }
+}
+/*Termina Nosotros*/
+/*Contactanos*/
+.seccioncontacto{
+    &__imagen{
+        width: 370px;
+    }
+    
+    &__bloque1{
+        width: 45vw;
+    }
+    &__titulo{
+        font-size: 28px;
+    }
+    &__label{
+        font-size: 14px;
+    }
+    &__selector{
+        font-size: 14px;
+        & option{
+            font-size: 14px;
+        }
+    }
+    &__input{
+        width: 45vw;
+    }
+    &__textarea{
+        width: 45vw;
+    }
+}
+.segundobloque{
+    &__subtitulo{
+        font-size: 30px;
+        padding-bottom: 1rem;
+    }
+    &__texto{
+        font-size: 15px;
+        margin-left: 16px;
+        margin-right:16px;
+        line-height: 30px;
+    }
+}
+/*termina Contactanos*/
 }
