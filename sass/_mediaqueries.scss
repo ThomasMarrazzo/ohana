@@ -60,16 +60,9 @@ li{
 .revendedores{
     text-align: center;
     &__titulo{
-        font-size: 20px;
-        display: inline-block;
+        font-size: 23px;
         font-weight: 500;
         margin-top: 25px;
-    }
-    &__titulo::after,&__titulo::before{
-        content: "";
-        position: absolute;
-        height: 0px;
-        margin-top: 0.6em;
     }
     &__bloque{
         display: flex;
@@ -413,15 +406,9 @@ li{
 .revendedores{
     text-align: center;
     &__titulo{
-        font-size: 25px;
-        display: inline-block;
+        font-size: 26px;
         margin-top: 30px;
-    }
-    &__titulo::after,&__titulo::before{
-        content: "";
-        position: absolute;
-        height: 0px;
-        margin-top: 0.6em;
+        margin-bottom: 30px;
     }
     &__bloque{
         display: flex;
@@ -740,15 +727,9 @@ li{
 .revendedores{
     text-align: center;
     &__titulo{
-        font-size: 30px;
+        font-size: 27px;
         font-weight: 500;
-        display: inline-block;
         margin-top: 30px;
-    }
-    &__titulo::after,&__titulo::before{
-        content: "";
-        height: 0px;
-        margin-top: 0.6em;
     }
     &__bloque{
         margin-top: 2rem;

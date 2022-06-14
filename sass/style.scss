@@ -54,25 +54,11 @@ body{
 .revendedores{
     text-align: center;
     &__titulo{
+        background-color: $background-tituloNovedades;
         font-size: 35px;
         font-weight:500;
-        display: inline-block;
-        position: relative;
+        color: $color-tituloNovedades;
         margin-top: 30px;
-    }
-    &__titulo::after,&__titulo::before{
-        content: "";
-        position: absolute;
-        width: 25vw;
-        height: 1.5px;
-        background-color:$color-lineasIndex;
-        margin-top: 0.6em;
-    }
-    &__titulo::before{
-        margin-left:-360px;
-    }
-    &__titulo::after{
-        margin-left:20px;
     }
     &__bloque{
         display: flex;
@@ -192,7 +178,6 @@ option{
         color:$color-tituloNovedades;
         font-weight: bold 600px;
     }
-    
     &__texto{
         text-align: center;
         font-size: 20px;
@@ -279,7 +264,9 @@ option{
     }
 }
 .primerafila__frase{
-    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
     color: #6a6a6a;
     text-align: center;
     margin-bottom: 25px;
