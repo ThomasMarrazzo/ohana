@@ -229,7 +229,7 @@ option {
 .tarjetas {
   width: 22vw;
   background-color: #fff;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
   cursor: default;
   border-radius: 7px; }
   .tarjetas:hover {
@@ -317,7 +317,7 @@ option {
     margin-top: 20px;
     width: 9vw; }
   .terceraseccion__texto {
-    padding-top: 20px;
+    padding-top: 10px;
     line-height: 30px;
     color: #646464; }
 
@@ -360,6 +360,10 @@ option {
   .seccioncontacto__seleccion {
     display: flex;
     justify-content: space-between; }
+  .seccioncontacto__selector {
+    font-size: 14px; }
+    .seccioncontacto__selector option {
+      font-size: 14px; }
 
 .segundobloque {
   margin-top: 5rem;
@@ -393,59 +397,37 @@ option {
       transition: all 1s; }
   .portada {
     margin-top: 0.9rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../recursos/titulo.jpg);
-    background-size: contain;
-    background-repeat: round;
-    display: flex;
-    justify-content: center;
     height: 45vh;
-    display: flex;
-    justify-content: center;
     align-items: center; }
     .portada h1 {
       font-size: 35px;
-      color: rgba(255, 255, 255, 0.993);
       font-weight: 600; }
   .intro {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .intro__bloque {
-      margin-top: 1.5rem;
-      align-items: center; }
     .intro__imagen {
       width: 50vw; }
-    .intro__bloqueDos {
-      display: flex;
-      align-items: center;
-      text-align: center;
-      width: 80vw;
-      margin-top: 2rem; }
     .intro__texto {
       font-size: 14px;
       line-height: 26px; }
-  .revendedores {
-    text-align: center; }
-    .revendedores__titulo {
-      font-size: 23px;
-      font-weight: 500;
-      margin-top: 25px; }
-    .revendedores__bloque {
-      display: flex;
-      flex-direction: column;
-      margin-top: 1rem;
-      align-items: center; }
-    .revendedores__texto {
-      display: flex;
-      margin-top: 1.3rem; }
-    .revendedores__texto p {
-      font-size: 14px;
-      width: 84vw;
-      text-align: center;
-      line-height: 26px; }
-  .imagen {
+  .revendedores__titulo {
+    font-size: 23px;
+    margin-top: 25px; }
+  .revendedores__bloque {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center; }
+  .revendedores__texto {
+    margin-top: 1.3rem; }
+  .revendedores__texto p {
+    font-size: 14px;
     width: 84vw;
-    border-radius: 3px; }
+    text-align: center;
+    line-height: 26px; }
+  .imagen {
+    width: 84vw; }
   .footer__redes {
     display: flex;
     flex-direction: column-reverse; }
@@ -465,7 +447,6 @@ option {
   .perfuminas__portada {
     grid-area: perfuminas__portada; }
   .perfuminas__titulo {
-    text-align: center;
     font-size: 25px; }
   .perfuminas__bloque {
     grid-area: perfuminas__bloque;
@@ -473,40 +454,30 @@ option {
     display: flex;
     justify-content: center; }
   .perfuminas__bloqueDos {
-    grid-area: perfuminas__bloqueDos;
-    margin-left: 1.5rem; }
+    display: flex;
+    justify-content: center;
+    margin-left: 0%;
+    grid-area: perfuminas__bloqueDos; }
   .perfuminas__imagen {
-    width: 80vw; }
+    width: 80vw;
+    border-radius: 3px; }
   .perfuminas__contenido {
     grid-area: perfuminas__contenido;
-    display: flex;
-    flex-direction: column;
-    margin-top: 3rem;
-    margin-right: 1.5rem;
     margin-left: 1.5rem; }
   .perfuminas__contenidoDos {
     grid-area: perfuminas__contenidoDos;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-right: 1.5rem;
     margin-left: 1.5rem; }
   .perfuminas__subtitulo {
     padding-bottom: 13px;
-    font-size: 23px;
-    align-self: center; }
-  .perfuminas__montoMetodo {
-    padding-top: 1rem; }
+    font-size: 23px; }
   .perfuminas__monto {
     font-size: 22px; }
   .perfuminas__subsubtitulo {
     font-size: 20px;
     padding-top: 1.5rem; }
   .perfuminas__selector {
-    width: 100%;
-    height: 6vh; }
+    width: 100%; }
   .perfuminas__boton {
-    margin-top: 2rem;
     padding-right: 2rem;
     font-size: 13px;
     padding-left: 2rem; }
@@ -518,11 +489,8 @@ option {
     grid-template-columns: 1fr;
     grid-template-areas: "nuevo" "bloqueUno"  "bloqueDos"  "bloqueTres" "bloqueCuatro"  "bloqueCinco"  "bloqueSeis"; }
   .nuevo__titulo {
-    text-align: center;
-    font-size: 27px;
-    font-weight: bold 600px; }
+    font-size: 27px; }
   .nuevo__texto {
-    text-align: center;
     font-size: 13px;
     margin-left: 10px;
     margin-right: 10px; }
@@ -531,27 +499,20 @@ option {
   .primerfila__imagen {
     width: 62vw; }
   .primerfila__texto {
-    text-align: center;
     width: 62vw; }
   .primerafila__frase {
-    font-size: 16px; }
+    font-size: 15px; }
   .primerfila__subtitulo {
-    text-align: center;
     font-size: 22px;
-    font-weight: 600;
     padding-top: 1rem; }
   /*termina novedades*/
   /*Empieza Nosotros*/
-  .segundaseccion {
-    text-align: center; }
-    .segundaseccion__subtitulo {
-      margin-top: 1.5rem;
-      font-size: 19px;
-      padding-bottom: 1.5rem; }
-    .segundaseccion__texto {
-      line-height: 30px;
-      width: 80%;
-      font-size: 15px; }
+  .segundaseccion__subtitulo {
+    margin-top: 1.5rem;
+    font-size: 19px;
+    padding-bottom: 1.5rem; }
+  .segundaseccion__texto {
+    font-size: 14px; }
   .terceraseccion {
     display: flex;
     flex-direction: column;
@@ -559,12 +520,7 @@ option {
     align-items: center; }
     .terceraseccion__contenido {
       width: 70vw;
-      height: 100%;
       margin-top: 1.7rem;
-      justify-content: center;
-      text-align: center; }
-    .terceraseccion__contenido div {
-      display: flex;
       justify-content: center; }
     .terceraseccion__imagen {
       margin-top: 1rem;
@@ -572,9 +528,8 @@ option {
     .terceraseccion__subsubtitulo {
       font-size: 20px; }
     .terceraseccion__texto {
-      margin-top: 15px;
-      line-height: 30px;
-      font-size: 15px;
+      padding-top: 0%;
+      font-size: 14px;
       margin-left: 10px;
       margin-right: 10px; }
   /*termina nosotros*/
@@ -584,27 +539,19 @@ option {
     flex-direction: column;
     align-items: center; }
     .seccioncontacto__imagen {
-      margin-top: 3rem;
       width: 90vw;
       border-radius: 3px; }
     .seccioncontacto__bloque1 {
       display: flex;
       flex-direction: column;
-      width: 60vw;
-      text-align: center; }
+      width: 60vw; }
     .seccioncontacto__logo {
       width: 40vw; }
     .seccioncontacto__titulo {
-      font-size: 25px;
-      padding-bottom: 30px;
-      text-align: center; }
+      font-size: 25px; }
     .seccioncontacto__input {
       font-size: 14px;
-      margin-bottom: 35px;
-      height: vh;
       width: 60vw; }
-    .seccioncontacto__seleccion {
-      justify-content: space-between; }
     .seccioncontacto__label {
       font-size: 13px;
       padding-right: 1rem; }
@@ -614,25 +561,15 @@ option {
         font-size: 13px; }
     .seccioncontacto__textarea {
       font-size: 14px;
-      width: 60vw;
-      height: 15vh;
-      margin-top: 2rem; }
-    .seccioncontacto__boton {
-      margin-top: 1.5rem;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-      font-size: 14px; }
+      width: 60vw; }
   .segundobloque {
-    margin-top: 5rem;
-    width: 100vw;
-    text-align: center; }
+    width: 100vw; }
     .segundobloque__subtitulo {
       font-size: 20px;
       padding-bottom: 1.5rem; }
     .segundobloque__texto {
       margin-left: 15px;
       margin-right: 15px;
-      line-height: 30px;
       font-size: 13px; } }
 
 @media (min-width: 541px) and (max-width: 720px) {
@@ -647,57 +584,32 @@ option {
   li {
     padding: 0.8rem; }
   .portada {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../recursos/titulo.jpg);
-    background-size: contain;
-    background-repeat: round;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    height: 70vh; }
     .portada h1 {
       font-size: 45px;
-      color: rgba(255, 255, 255, 0.993);
       font-weight: 600; }
-  .intro {
+  .intro__imagen {
+    width: 40vw; }
+  .intro__texto {
+    font-size: 15px;
+    line-height: 23px; }
+  .revendedores__titulo {
+    font-size: 26px;
+    margin-bottom: 30px; }
+  .revendedores__bloque {
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
     align-items: center; }
-    .intro__bloque {
-      align-items: center;
-      margin-top: 1.5rem; }
-    .intro__imagen {
-      width: 40vw; }
-    .intro__bloqueDos {
-      display: flex;
-      align-items: center;
-      text-align: center;
-      width: 80vw;
-      margin-top: 2rem; }
-    .intro__texto {
-      font-size: 15px;
-      line-height: 23px; }
-  .revendedores {
-    text-align: center; }
-    .revendedores__titulo {
-      font-size: 26px;
-      margin-top: 30px;
-      margin-bottom: 30px; }
-    .revendedores__bloque {
-      display: flex;
-      flex-direction: column;
-      margin-top: 1rem;
-      align-items: center; }
-    .revendedores__texto {
-      display: flex;
-      margin-top: 1.3rem; }
-    .revendedores__texto p {
-      font-size: 15px;
-      width: 80vw;
-      line-height: 25px;
-      text-align: center; }
-  .imagen {
+  .revendedores__texto {
+    margin-top: 1.3rem; }
+  .revendedores__texto p {
+    font-size: 15px;
     width: 80vw;
-    border-radius: 3px; }
+    line-height: 25px;
+    text-align: center; }
+  .imagen {
+    width: 80vw; }
   .footer__redes {
     display: flex;
     flex-direction: column-reverse; }
@@ -716,7 +628,6 @@ option {
   .perfuminas__portada {
     grid-area: perfuminas__portada; }
   .perfuminas__titulo {
-    text-align: center;
     font-size: 28px; }
   .perfuminas__bloque {
     grid-area: perfuminas__bloque;
@@ -725,7 +636,6 @@ option {
     justify-content: center; }
   .perfuminas__bloqueDos {
     grid-area: perfuminas__bloqueDos;
-    margin-left: 1.5rem;
     margin-right: 1.5rem;
     display: flex;
     justify-content: center; }
@@ -733,34 +643,20 @@ option {
     width: 80vw; }
   .perfuminas__contenido {
     grid-area: perfuminas__contenido;
-    display: flex;
-    flex-direction: column;
-    margin-top: 3rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem; }
+    margin-left: 1.5rem; }
   .perfuminas__contenidoDos {
     grid-area: perfuminas__contenidoDos;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-right: 1.5rem;
     margin-left: 1.5rem; }
   .perfuminas__subtitulo {
     padding-bottom: 13px;
-    font-size: 26px;
-    align-self: center; }
-  .perfuminas__montoMetodo {
-    padding-top: 1rem; }
+    font-size: 26px; }
   .perfuminas__monto {
     font-size: 23px; }
   .perfuminas__subsubtitulo {
-    font-size: 22px;
-    padding-top: 1.5rem; }
+    font-size: 22px; }
   .perfuminas__selector {
-    width: 100%;
-    height: 6vh; }
+    width: 100%; }
   .perfuminas__boton {
-    margin-top: 2rem;
     padding-right: 2rem;
     font-size: 16px;
     padding-left: 2rem; }
@@ -772,11 +668,8 @@ option {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "nuevo nuevo" "bloqueUno bloqueDos"  "bloqueTres bloqueCuatro " "bloqueCinco bloqueSeis"; }
   .nuevo__titulo {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold 600px; }
+    font-size: 30px; }
   .nuevo__texto {
-    text-align: center;
     margin-left: 15px;
     margin-right: 15px;
     font-size: 17px; }
@@ -785,28 +678,20 @@ option {
   .primerfila__imagen {
     width: 40vw; }
   .primerfila__texto {
-    text-align: center;
     width: 40vw; }
   .primerafila__frase {
-    font-size: 15px;
-    margin-left: 10px;
-    margin-right: 10px; }
+    font-size: 15px; }
   .primerfila__subtitulo {
-    font-weight: 600;
     font-size: 19px;
     padding-top: 1rem; }
   /*termina media novedades*/
   /*empieza media nosotros*/
-  .segundaseccion {
-    text-align: center; }
-    .segundaseccion__subtitulo {
-      margin-top: 3rem;
-      font-size: 25px;
-      padding-bottom: 1rem; }
-    .segundaseccion__texto {
-      font-size: 15px;
-      line-height: 30px;
-      width: 85%; }
+  .segundaseccion__subtitulo {
+    font-size: 25px;
+    padding-bottom: 1rem; }
+  .segundaseccion__texto {
+    font-size: 15px;
+    width: 85%; }
   .terceraseccion {
     display: flex;
     flex-direction: column;
@@ -814,12 +699,7 @@ option {
     align-items: center; }
     .terceraseccion__contenido {
       width: 60vw;
-      height: 100%;
       margin-top: 1rem;
-      justify-content: center;
-      text-align: center; }
-    .terceraseccion__contenido div {
-      display: flex;
       justify-content: center; }
     .terceraseccion__imagen {
       margin-top: 10px;
@@ -828,61 +708,42 @@ option {
       margin-top: 10px;
       font-size: 24px; }
     .terceraseccion__texto {
-      padding-top: 20px;
-      line-height: 30px;
+      padding-top: 0%;
       padding-left: 15px;
       padding-right: 15px;
       font-size: 15px; }
   /*termina media nosotros*/
   /*empieza contacto*/
-  .seccioncontacto {
-    display: flex; }
-    .seccioncontacto__imagen {
-      margin-top: 3rem;
-      width: 88vw;
-      height: 130vh;
-      border-radius: 4px; }
-    .seccioncontacto__bloque1 {
-      display: flex;
-      flex-direction: column;
-      width: 65vw;
-      text-align: center; }
-    .seccioncontacto__logo {
-      width: 40vw; }
-    .seccioncontacto__titulo {
-      font-size: 25px;
-      padding-bottom: 30px;
-      text-align: center; }
-    .seccioncontacto__input {
-      margin-bottom: 35px;
-      height: 5vh;
-      width: 65vw; }
-    .seccioncontacto__label {
+  .seccioncontacto__imagen {
+    width: 88vw;
+    height: 130vh;
+    border-radius: 4px; }
+  .seccioncontacto__bloque1 {
+    display: flex;
+    flex-direction: column;
+    width: 65vw; }
+  .seccioncontacto__logo {
+    width: 40vw; }
+  .seccioncontacto__titulo {
+    font-size: 25px; }
+  .seccioncontacto__input {
+    width: 65vw; }
+  .seccioncontacto__label {
+    font-size: 14px; }
+  .seccioncontacto__selector {
+    font-size: 14px; }
+    .seccioncontacto__selector option {
       font-size: 14px; }
-    .seccioncontacto__selector {
-      font-size: 14px; }
-      .seccioncontacto__selector option {
-        font-size: 14px; }
-    .seccioncontacto__textarea {
-      width: 65vw;
-      height: 15vh;
-      margin-top: 2rem; }
-    .seccioncontacto__boton {
-      margin-top: 1.5rem;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-      font-size: 14px; }
+  .seccioncontacto__textarea {
+    width: 65vw; }
   .segundobloque {
-    margin-top: 5rem;
-    width: 100vw;
-    text-align: center; }
+    width: 100vw; }
     .segundobloque__subtitulo {
       font-size: 26px;
       padding-bottom: 1.5rem; }
     .segundobloque__texto {
       margin-left: 15px;
       margin-right: 15px;
-      line-height: 30px;
       font-size: 14px; } }
 
 @media (min-width: 721px) and (max-width: 1080px) {
@@ -901,35 +762,29 @@ option {
       transform: scale(1.1);
       transition: all 1s; }
   .portada h1 {
-    font-size: 65px;
-    font-weight: 800; }
+    font-size: 65px; }
   .intro__imagen {
     width: 30vw; }
   .intro__texto {
     font-size: 15px;
     line-height: 28px; }
-  .revendedores {
-    text-align: center; }
-    .revendedores__titulo {
-      font-size: 27px;
-      font-weight: 500;
-      margin-top: 30px; }
-    .revendedores__bloque {
-      margin-top: 2rem; }
-    .revendedores__texto p {
-      font-size: 15px;
-      line-height: 27px; }
+  .revendedores__titulo {
+    font-size: 27px; }
+  .revendedores__bloque {
+    margin-top: 2rem; }
+  .revendedores__texto p {
+    font-size: 15px;
+    line-height: 27px; }
   .footer__texto {
     font-size: 10px; }
   /*termina Index*/
   /*Tienda*/
   .perfuminas__imagen {
     width: 500px;
-    margin-top: 3rem; }
+    border-radius: 3px; }
   .perfuminas__subtitulo {
     padding-bottom: 15px;
-    font-size: 25px;
-    font-weight: 600; }
+    font-size: 25px; }
   .perfuminas__monto {
     font-size: 23px;
     font-weight: 500; }
@@ -937,73 +792,46 @@ option {
     font-size: 20px;
     padding-bottom: 1rem;
     padding-top: 1rem; }
-  .perfuminas__selector {
-    width: 45vw;
-    height: 6vh; }
-    .perfuminas__selector option {
-      font-size: 15px; }
+  .perfuminas__selector option {
+    font-size: 15px; }
   /*termina Tienda*/
   /*Novedades*/
   .tarjetas {
     width: 27vw;
-    background-color: #fff;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
     border-radius: 7px; }
     .tarjetas:hover {
-      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
       transform: translateY(-3%);
       transition: all 0.5s ease; }
   .primerfila__imagen {
-    width: 27vw;
-    border-radius: 4px; }
+    width: 27vw; }
   .primerfila__texto {
     width: 27vw; }
     .primerfila__texto a {
-      text-decoration: none;
-      color: #a64d7c;
-      border: 1px solid #a64d7c;
-      border-radius: 4px;
-      padding: 7px;
-      font-size: 12px;
-      font-weight: 500; }
-    .primerfila__texto a:hover {
-      background-color: #a64d7c;
-      color: rgba(255, 255, 255, 0.993); }
+      font-size: 12px; }
   .primerfila__subtitulo {
-    font-weight: 600;
     font-size: 20px; }
   .primerafila__frase {
-    font-size: 14px;
-    margin-left: 10px;
-    margin-right: 10px; }
+    font-size: 14px; }
   /*Terimna novedades*/
   /*Nosotros*/
   .segundaseccion__subtitulo {
     padding-bottom: 1.5rem; }
   .segundaseccion__texto {
-    line-height: 30px;
-    width: 80vw;
     font-size: 15px; }
-  .terceraseccion {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 4rem; }
-    .terceraseccion__contenido {
-      width: 25vw; }
-    .terceraseccion__subsubtitulo {
-      font-size: 20px;
-      font-weight: 500;
-      margin-top: 20px; }
-    .terceraseccion__imagen {
-      margin-top: 20px;
-      width: 10vw; }
-    .terceraseccion__texto {
-      margin-left: 8px;
-      margin-right: 8px;
-      font-size: 14px;
-      padding-top: 20px;
-      line-height: 25px; }
+  .terceraseccion__contenido {
+    width: 25vw; }
+  .terceraseccion__subsubtitulo {
+    font-size: 20px;
+    font-weight: 500; }
+  .terceraseccion__imagen {
+    width: 10vw; }
+  .terceraseccion__texto {
+    padding-top: 0%;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 14px;
+    line-height: 25px; }
   /*Termina Nosotros*/
   /*Contactanos*/
   .seccioncontacto__imagen {
@@ -1022,12 +850,8 @@ option {
     width: 45vw; }
   .seccioncontacto__textarea {
     width: 45vw; }
-  .segundobloque__subtitulo {
-    font-size: 30px;
-    padding-bottom: 1rem; }
   .segundobloque__texto {
     font-size: 15px;
     margin-left: 16px;
-    margin-right: 16px;
-    line-height: 30px; }
+    margin-right: 16px; }
   /*termina Contactanos*/ }
