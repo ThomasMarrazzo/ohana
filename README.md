@@ -1,1 +1,2 @@
-# ohana
+# Ohana
+El presente proyecto es referido a una empresa de Aromas elaborados en Carhué, provincia de Buenos Aires. El cual contiene una página principal y cuatro más. Fue desarrollado con HTML, CSS, BOOTSTRAP 5.1 y SASS, ademas se es adaptable para desktop, tablet y celular.
