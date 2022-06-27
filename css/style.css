@@ -397,7 +397,7 @@ option {
       transition: all 1s; }
   .portada {
     margin-top: 0.9rem;
-    height: 45vh;
+    height: 30vh;
     align-items: center; }
     .portada h1 {
       font-size: 35px;
@@ -516,11 +516,11 @@ option {
   .terceraseccion {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
+    margin-top: 2rem;
     align-items: center; }
     .terceraseccion__contenido {
       width: 70vw;
-      margin-top: 1.7rem;
+      margin-bottom: 1.7rem;
       justify-content: center; }
     .terceraseccion__imagen {
       margin-top: 1rem;
@@ -539,19 +539,21 @@ option {
     flex-direction: column;
     align-items: center; }
     .seccioncontacto__imagen {
-      width: 90vw;
+      width: 80vw;
+      height: 60vh;
       border-radius: 3px; }
     .seccioncontacto__bloque1 {
       display: flex;
       flex-direction: column;
-      width: 60vw; }
+      width: 80vw; }
     .seccioncontacto__logo {
       width: 40vw; }
     .seccioncontacto__titulo {
+      margin-top: 1rem;
       font-size: 25px; }
     .seccioncontacto__input {
       font-size: 14px;
-      width: 60vw; }
+      width: 80vw; }
     .seccioncontacto__label {
       font-size: 13px;
       padding-right: 1rem; }
@@ -561,12 +563,12 @@ option {
         font-size: 13px; }
     .seccioncontacto__textarea {
       font-size: 14px;
-      width: 60vw; }
+      width: 80vw; }
   .segundobloque {
     width: 100vw; }
     .segundobloque__subtitulo {
       font-size: 20px;
-      padding-bottom: 1.5rem; }
+      padding-bottom: 0.6rem; }
     .segundobloque__texto {
       margin-left: 15px;
       margin-right: 15px;
@@ -584,7 +586,7 @@ option {
   li {
     padding: 0.8rem; }
   .portada {
-    height: 70vh; }
+    height: 50vh; }
     .portada h1 {
       font-size: 45px;
       font-weight: 600; }
@@ -761,8 +763,10 @@ option {
     li:hover {
       transform: scale(1.1);
       transition: all 1s; }
-  .portada h1 {
-    font-size: 65px; }
+  .portada {
+    height: 60vh; }
+    .portada h1 {
+      font-size: 65px; }
   .intro__imagen {
     width: 30vw; }
   .intro__texto {
