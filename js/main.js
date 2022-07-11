@@ -6,7 +6,7 @@ let nombre = prompt("ingrese su nombre");
 let apellido = prompt("ingrese su apellido");
 let edad = parseInt(prompt("ingrese su edad"));
     if(edad >= 18){
-        alert ("Bienvenido" + " " + nombre + " " + apellido);
+        alert (`Bienvenido ${nombre} ${apellido}`);
         alert (`productos disponibles:
         1- Perfuminas
         2- Difusores 
