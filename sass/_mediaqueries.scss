@@ -13,6 +13,8 @@
     @include navegacion;
 }
 li{
+    display: flex;
+    justify-content: space-around;
     text-decoration: none;
     padding: 0.8rem;
     &:hover{
@@ -296,6 +298,8 @@ option{
     @include navegacion;
 }
 li{
+    display: flex;
+    justify-content: space-around;
     padding: 0.8rem;
 }   
 .portada{
@@ -551,10 +555,13 @@ option{
 .nav-item{
     text-align: center;
 }
+
 .navegacion{
     @include navegacion;
 }
 li{
+    display: flex;
+    justify-content: space-around;
     text-decoration: none;
     padding: 0.8rem;
     &:hover{
