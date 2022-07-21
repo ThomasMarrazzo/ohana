@@ -115,9 +115,9 @@ while(seleccion != "no"){
     let producto = prompt("Agrega un producto a tu carrito");
     let precio = 0;
 
-    if(producto == "perfumina Vivex" || producto == "perfumina limon" || producto == "perfumina citrus"
-    || producto == "perfumina Floral" || producto == "perfumina jazmin" || producto == "Difusor frutivex" 
-    || producto == "difusor katmandu" || producto == "difusor chiky" || producto == "Difusor te verde"
+    if(producto == "perfumina vivex" || producto == "perfumina limon" || producto == "perfumina citrus"
+    || producto == "perfumina floral" || producto == "perfumina jazmin" || producto == "difusor frutivex" 
+    || producto == "difusor katmandu" || producto == "difusor chiky" || producto == "difusor te verde"
     || producto == "difusor rosa jazmin"){
         switch(producto){
             case "perfumina vivex":
