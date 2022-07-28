@@ -1,19 +1,33 @@
-document.querySelector(".perfuminas__titulo").textContent = "Todos Nuestros Productos";
-document.querySelector(".perfuminas__subtitulo").style.color = "rgb(166, 77, 124)";
-document.getElementById("subtitulo2").style.color = "rgb(166, 77, 124)";
 
-let fraseInicio = document.createElement("p");
-fraseInicio.textContent = "Perfuma tu hogar con las mejores fragancias";
-let texto = document.getElementById("introPerfumina");
-texto.appendChild(fraseInicio);
-console.log(fraseInicio) 
+//PAGINA CONTACTANOS
 
-let frase = document.createElement("p");
-frase.textContent = "Crea ambientes con propiedades relajantes gracias a los Difusores Aromáticos ";
-let introFrase = document.getElementById("introDifusor");
-introFrase.appendChild(frase);
-console.log(frase)
+const formulario = document.getElementById("form");
 
+formulario.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    let nombre = document.getElementById("inputNombre").value;
+    console.log(nombre);
+    let apellido = document.getElementById("inputApellido").value;
+    console.log(apellido);
+    let email = document.getElementById("inputEmail").value;
+    console.log(email);
+    let mensaje = document.getElementById("inputMensaje").value;
+    console.log(mensaje);
+    
+}) 
+const selector = document.querySelector(".seccioncontacto__selector");
+
+selector.addEventListener("change",() =>{
+    console.log(`El usuario eligio la opcion ${selector.value}`);
+}) 
+
+const botonEnviar = document.getElementById("enviar");
+
+botonEnviar.addEventListener("click",(e)=>{
+    e.target;
+    console.log(e)
+})
+// PAGINA CONTACTANOS
 
 
 

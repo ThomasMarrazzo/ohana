@@ -58,28 +58,28 @@
                     <img class="seccioncontacto__logo" src="../recursos/logotransparente.png" alt="Logo de Ohana">
                     <h1 class="seccioncontacto__titulo">¡Estamos en contacto!</h1>
                 </div>
-                <form class="seccioncontacto__formulario"method="post">
+                <form class="seccioncontacto__formulario" id="form"method="post">
                     <div>
-                        <input class="seccioncontacto__input" type="text" name="Nombre" placeholder="Nombre">
+                        <input class="seccioncontacto__input" id="inputNombre" type="text" name="Nombre" placeholder="Nombre">
                     </div>
                     <div>  
-                        <input class="seccioncontacto__input" type="text" name="Apellido" placeholder="Apellido">
+                        <input class="seccioncontacto__input" id="inputApellido" type="text" name="Apellido" placeholder="Apellido">
                     </div>
                     <div>    
-                        <input class="seccioncontacto__input" type="text" name="Email" placeholder="Email">
+                        <input class="seccioncontacto__input" id="inputEmail" type="text" name="Email" placeholder="Email">
                     </div>
                     <div class="seccioncontacto__seleccion"> 
                         <label class="seccioncontacto__label" for="Su consulta es sobre">Su consulta es sobre</label>
                         <select class="seccioncontacto__selector" name="Elegir consulta">
                             <option value="Productos">Productos</option>
-                            <option value="Productos">Revender</option>
-                            <option value="Productos">Otra</option>
+                            <option value="Revender">Revender</option>
+                            <option value="Otra">Otra</option>
                         </select>
                     </div>
                     <div>
-                        <textarea class="seccioncontacto__textarea"name="Mensaje" placeholder="Mensaje"></textarea>
+                        <textarea class="seccioncontacto__textarea" id="inputMensaje" name="Mensaje" placeholder="Mensaje"></textarea>
                     </div>    
-                    <input class="seccioncontacto__boton"type="submit"value="Enviar mensaje">
+                    <input class="seccioncontacto__boton" id="enviar"type="submit"value="Enviar mensaje">
                 </form>
             </div>
         </section> 
@@ -102,5 +102,6 @@
     </div>
      <!--Script bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
