@@ -98,8 +98,62 @@ body {
 /* css tienda*/
 .grid-tienda {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "perfuminas__portada perfuminas__portada" "perfuminas__bloque perfuminas__contenido" "perfuminas__bloqueDos perfuminas__contenidoDos"; }
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "perfuminas__portada perfuminas__portada perfuminas__portada perfuminas__portada" "bloque__uno bloque__dos bloque__tres bloque__cuatro" "bloque__cinco bloque__seis bloque__siete bloque__ocho" "carritoItem carritoItem carritoItem carritoItem" "comprarCards comprarCards comprarCards comprarCards"; }
+
+.alert {
+  z-index: 100; }
+
+.hide, .remove {
+  display: none; }
+
+.bloque__uno {
+  display: flex;
+  justify-content: center;
+  grid-area: bloque__uno; }
+
+.bloque__dos {
+  display: flex;
+  justify-content: center;
+  grid-area: bloque__dos; }
+
+.bloque__tres {
+  display: flex;
+  justify-content: center;
+  grid-area: bloque__tres; }
+
+.bloque__cuatro {
+  display: flex;
+  justify-content: center;
+  grid-area: bloque__cuatro; }
+
+.bloque__cinco {
+  display: flex;
+  justify-content: center;
+  grid-area: bloque__cinco; }
+
+.bloque__seis {
+  display: flex;
+  justify-content: center;
+  grid-area: bloque__seis; }
+
+.bloque__siete {
+  display: flex;
+  justify-content: center;
+  grid-area: bloque__siete; }
+
+.bloque__ocho {
+  display: flex;
+  justify-content: center;
+  grid-area: bloque__ocho; }
+
+.description {
+  font-size: 14px;
+  height: 25px;
+  overflow: hidden;
+  transition: height .3s ease-in .1s; }
+  .description:hover {
+    height: 80px; }
 
 .perfuminas__portada {
   grid-area: perfuminas__portada; }
@@ -110,62 +164,157 @@ body {
   background-color: #a64d7c;
   color: rgba(255, 255, 255, 0.993); }
 
-.perfuminas__bloque {
-  grid-area: perfuminas__bloque;
-  margin-left: 1.5rem; }
+.button {
+  text-decoration: none;
+  background-color: #a64d7c;
+  color: rgba(255, 255, 255, 0.993);
+  border: 1px solid #a64d7c;
+  border-radius: 4px;
+  padding: 6px;
+  font-size: 14px;
+  font-weight: 500; }
+  .button:hover {
+    background-color: rgba(255, 255, 255, 0.993);
+    color: #a64d7c; }
 
-.perfuminas__bloqueDos {
-  grid-area: perfuminas__bloqueDos;
-  margin-left: 1.5rem; }
+.moveCards {
+  margin-top: 20px; }
 
-.perfuminas__imagen {
-  width: 45vw;
-  margin-top: 3rem; }
+.tituloCards {
+  font-weight: 500;
+  font-size: 20px; }
 
-.perfuminas__contenido {
-  grid-area: perfuminas__contenido;
-  display: flex;
-  flex-direction: column;
-  margin-top: 3rem;
-  margin-right: 1.5rem; }
+.imgCards {
+  height: 25vh;
+  border-radius: 2px; }
 
-.perfuminas__contenidoDos {
-  grid-area: perfuminas__contenidoDos;
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  margin-right: 1.5rem; }
+.descripcionCards {
+  font-size: 14px; }
 
-.perfuminas__subtitulo {
-  padding-bottom: 20px;
-  font-size: 30px;
-  font-weight: 600;
-  align-self: center; }
+.precio {
+  font-size: 20px;
+  margin-left: 110px; }
 
-.perfuminas__monto {
-  font-size: 30px; }
+.carritoItem {
+  grid-area: carritoItem;
+  margin: 0 auto;
+  width: 80%; }
 
-.perfuminas__subsubtitulo {
-  font-size: 23px;
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem; }
+.table__productos {
+  display: flex; }
 
-.perfuminas__selector {
-  width: 45vw;
-  height: 6vh; }
+.table__productos img {
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-right: 20px; }
 
-.perfuminas__boton {
-  margin-top: 2rem;
-  padding-right: 2.5rem;
-  font-size: 15px;
-  padding-left: 2.5rem; }
+.table__cantidad input {
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 30px; }
 
-.perfuminas__boton:hover {
-  transform: scaley(1.1); }
+.cards {
+  background-color: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  cursor: default;
+  border-radius: 7px; }
+  .cards:hover {
+    box-shadow: 5px 5px 20px rgba(143, 64, 106, 0.493);
+    transform: translateY(-2%);
+    transition: all 0.5s ease; }
 
-option {
-  font-size: 17px; }
+.comprarCards {
+  grid-area: comprarCards;
+  margin: 0 auto;
+  width: 80%; }
 
+/* .inputCarrito{
+    width: 40px;
+    border: none;
+}
+.total{
+   font-size: 22px;
+   margin-left: 10px;
+} */
+/* .grid-tienda{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "perfuminas__portada perfuminas__portada"
+                        "perfuminas__bloque perfuminas__contenido"
+                        "perfuminas__bloqueDos perfuminas__contenidoDos";
+}
+.perfuminas{
+    &__portada{
+        grid-area: perfuminas__portada;
+    }
+    &__titulo{
+        text-align: center;
+        font-size: 35px;
+        background-color: $color-navLink;
+        color:$color-textoPortada;
+    }
+    &__bloque{
+        grid-area: perfuminas__bloque;
+        margin-left: 1.5rem;
+    }
+    &__bloqueDos{
+        grid-area: perfuminas__bloqueDos;
+        margin-left: 1.5rem;
+    }
+    &__imagen{
+        width:45vw;
+        margin-top: 3rem;
+    }
+    &__contenido{
+        grid-area: perfuminas__contenido;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-right: 1.5rem;
+    }
+    &__contenidoDos{
+        grid-area: perfuminas__contenidoDos;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-right: 1.5rem;
+    }
+    &__subtitulo{
+        padding-bottom: 20px;
+        font-size: 30px;
+        font-weight: 600;
+        align-self: center;
+    }
+    &__monto{
+        font-size: 30px;
+    }
+    &__subsubtitulo{
+        font-size: 23px;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    &__selector{
+        width: 45vw;
+        height: 6vh;
+    }
+    &__boton{
+        margin-top: 2rem;
+        padding-right: 2.5rem;
+        font-size: 15px;
+        padding-left: 2.5rem;
+    }
+    &__boton:hover{
+        transform: scaley(1.1);
+    }
+}
+option{
+    font-size: 17px;
+} */
 /* termina css tienda*/
 /*css de novedades*/
 .grid-container {
