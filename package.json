@@ -1,11 +1,12 @@
 {
   "name": "perfuminas-marrazzo",
   "version": "1.0.0",
-  "description": "",
+  "description": "El presente proyecto es referido a una empresa de Aromas elaborados en Carhué, provincia de Buenos Aires. El cual contiene una página principal y cuatro más. Fue desarrollado con HTML, CSS, BOOTSTRAP 5.1 y SASS, ademas se es adaptable para desktop, tablet y celular.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss sass/style.scss css/style.css","watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "build-css": "node-sass --include-path scss sass/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
   }
 }

@@ -91,9 +91,7 @@ function removeItemCarrito(e){
     const tr = buttonDelete.closest(".itemCarrito");
     const title = tr.querySelector(".title").textContent;
     for(let i= 0; i < carrito.length; i++){
-        if(carrito[i].title.trim() === title.trim()){
-            carrito.splice(i, 1)
-        }
+        let actPrecio = (carrito[i].title.trim() === title.trim()) ? carrito.splice(i, 1) : false;
     }
 
     const alert = document.querySelector(".remove")
