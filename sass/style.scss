@@ -97,7 +97,8 @@ body{
                         "bloque__uno bloque__dos bloque__tres bloque__cuatro"
                         "bloque__cinco bloque__seis bloque__siete bloque__ocho"
                         "carritoItem carritoItem carritoItem carritoItem"
-                        "comprarCards comprarCards comprarCards comprarCards";
+                        "comprarCards comprarCards comprarCards comprarCards"
+                        ;
 }
 .alert{
     z-index: 100;
@@ -235,9 +236,24 @@ margin-right: 20px
 }
 .comprarCards{
     grid-area: comprarCards;
-    margin: 0 auto;
-    width: 80%;
- 
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.botonComprar{
+    text-decoration: none;
+    background-color: $color-navLink;
+    color: $color-textoPortada;
+    border: 1px solid $color-navLink;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 16px;
+    font-weight: 500;
+
+&:hover{
+    background-color: $color-textoPortada;
+    color:$color-navLink;
+}
 }
 /* .inputCarrito{
     width: 40px;

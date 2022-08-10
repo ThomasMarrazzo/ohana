@@ -175,52 +175,10 @@
                     </tbody>
                   </table>
 
-                  <div class="row mx-4 comprarCards">
-                      <div class="col">
-                          <h3 class="itemCartTotal">Total: 0</h3>
-                      </div>
-                      <div class="col   ">
-                          <button class="btn btn-success">Comprar</button>
-                      </div>
+                  <div class="comprarCards">
+                    <h3 class="itemCartTotal">Total: 0</h3>
+                    <button class="botonComprar">Comprar</button>
                   </div>
-
-         <!--        <div class="carritoItem">
-                    <table class="table table-hover ">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Productos</th>
-                            <th scope="col">Precio</th>
-                            <th scope="col">Cantidad</th>
-                          </tr>
-                        </thead>
-                    
-                        <tbody class="tbody">
-                           
-                        </tbody>
-                      </table>
-                      <div class="row mx-4">
-                         <div class="col d-flex  ">
-                            <h3 >Total:</h3>
-                            <p class="itemCartTotal total">$0</p>
-                         </div> 
-                        </div>
-                         <div class="col d-flex justify-content-end">
-                            <button class="btn">Comprar</button>
-                         </div>
-                    
-                    
-                </div> -->
-                
-
-
-
-
-
-
-
-
-
     </main>
     <div class="container footer">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer__redes">
@@ -236,109 +194,7 @@
         </footer>
       </div>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
      <script src="../js/main.js"></script>
 </body>
 </html>
-
-        <!-- <div class="perfuminas__portada">
-            <h1 class="perfuminas__titulo">NUESTROS PRODUCTOS</h1>
-        </div>
-        <div class="perfuminas__bloque">
-            <img class="perfuminas__imagen"src="../recursos/perfumina3.jpg" alt="Perfuminas">
-        </div>
-        <div class="perfuminas__contenido"> 
-            <h2 class="perfuminas__subtitulo">PERFUMINAS</h2>
-            <div id = "introPerfumina">Perfuma tu hogar con las mejores fragancias</div>
-            <div class="perfuminas__montoMetodo">
-                <span class="perfuminas__monto">$650</span>
-            </div>    
-            <h3 class="perfuminas__subsubtitulo">AROMA</h3>
-            <form class="perfuminas__formulario" method="post">
-                <select class="perfuminas__selector" name="Aromas">
-                    <option value="Melisa y Verbena">Melisa y Verbena</option>
-                    <option value="Pera y Flores Blancas">Pera y Flores Blancas</option>
-                    <option value="Mora Frambuesa">Mora Frambuesa</option>
-                    <option value="Uva y Frutos del Bosque">Uva y Frutos del Bosque</option>
-                    <option value="Naranja Pimienta">Naranja Pimienta</option>
-                    <option value="Lavanda Manzanilla">Lavanda Manzanilla</option>
-                    <option value="Papaya Durazno">Papaya Durazno</option>
-                    <option value="Baby Cotton">Baby Cotton</option>
-                    <option value="Rosa Jazmín">Rosa Jazmín</option>
-                    <option value="Nag Champa">Nag Champa</option>
-                    <option value="Moon Sparkle">Moon Sparkle</option>
-                    <option value="Mamá Bebé">Mamá Bebé</option>
-                    <option value="Té con limón">Tè con limón</option>
-                    <option value="Pitanga Preta">Pitanga Preta</option>
-                    <option value="Coni">Coni</option>
-                    <option value="Vivex">Vivex</option>
-                    <option value="Chiky">Chiky</option>
-                    <option value="Limón">Limón</option>
-                    <option value="Té verde">Té verde</option> 
-                    <option value="Ralph Ksk">Ralph Ksk</option> 
-                    <option value="Confort">Confort</option> 
-                    <option value="Arpege">Arpege</option> 
-                    <option value="Petit">Petit</option> 
-                    <option value="Citrus">Citrus</option> 
-                    <option value="Floral">Floral</option> 
-                    <option value="Coco Lima">Coco Lima</option>
-                    <option value="Katmandú">Katmandú</option> 
-                    <option value="For Him">For Him</option> 
-                    <option value="Hamsa">Hamsa</option> 
-                    <option value="Spice">Spice</option> 
-                    <option value="Ck One">Ck One</option> 
-                    <option value="Frutivex">Frutivex</option> 
-                </select>
-                <h3 class="perfuminas__subsubtitulo">TAMAÑO</h3>
-                <select class="perfuminas__selector" name="Tamaño">
-                    <option value="125ml">125ml</option>
-                    <option value="250ml">250ml</option>
-                    <option value="500ml">500ml</option>
-                    <option value="1lt">1lt</option>
-                </select>
-                <div>
-                    <input class="perfuminas__boton" type="submit" name="Enviar seleccion" value="Agregar al carrito">
-                </div>
-        </div>
-            </form>
-            <div class="perfuminas__bloqueDos">
-                <img class="perfuminas__imagen"src="../recursos/difusor66.jpg" alt="Difusores">
-            </div>
-            <div class="perfuminas__contenidoDos">
-                <h2 id="subtitulo2" class="perfuminas__subtitulo">DIFUSORES</h2>  
-                <div id = "introDifusor">Crea ambientes con propiedades relajantes gracias a los Difusores Aromáticos </div>
-                <div class="perfuminas__montoMetodo">
-                    <span class="perfuminas__monto">$500</span>
-                </div>
-                <h3 class="perfuminas__subsubtitulo">AROMA</h3>
-                <form class="perfuminas__formulario" method="post">
-                    <select class="perfuminas__selector"name="Aromas">
-                        <option value="Vivex">Vivex</option>
-                        <option value="Limón">Limón</option>
-                        <option value="Citrus">Citrus</option>
-                        <option value="Floral">Floral</option>
-                        <option value="Jazmín">Jazmín</option>
-                        <option value="Verbena">Verbena</option>
-                        <option value="Frutivex">Frutivex</option>
-                        <option value="Katmandú">Katmandú</option>
-                        <option value="Nagchampa">Nagchampa</option>
-                        <option value="Mamá bebé">Mamá bebé</option>
-                        <option value="Té con limón">Té con limón</option>
-                        <option value="Coco Vainilla">Coco Vainilla</option>
-                        <option value="Papaya Durazno">Papaya Durazno</option>
-                        <option value="Mora Frambueza">Mora Frambueza</option>
-                        <option value="Lavanda Manzanilla">Lavanda Manzanilla</option>
-                        <option value="Naranja Pimienta">Naranja Pimienta</option>
-                        <option value="Pera y Flores Blancas">Pera y Flores Blancas</option>
-                        <option value="Uva y Frutos del Bosque">Uva y Frutos del Bosque</option>
-                    </select>
-                    <h3 class="perfuminas__subsubtitulo">TAMAÑO</h3>
-                    <select class="perfuminas__selector" name="Tamaño">
-                        <option value="125ml">125ml</option>
-                        <option value="200ml">200ml</option>
-                        <option value="250ml">250ml</option>
-                    </select>
-                    <div>
-                        <input class="perfuminas__boton" id="boton" type="submit" name="Enviar seleccion"value="Agregar al carrito">
-                    </div>
-            </div>
-                </form> -->
