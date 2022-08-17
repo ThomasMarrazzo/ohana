@@ -255,91 +255,6 @@ margin-right: 20px
     color:$color-navLink;
 }
 }
-/* .inputCarrito{
-    width: 40px;
-    border: none;
-}
-.total{
-   font-size: 22px;
-   margin-left: 10px;
-} */
-
-/* .grid-tienda{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "perfuminas__portada perfuminas__portada"
-                        "perfuminas__bloque perfuminas__contenido"
-                        "perfuminas__bloqueDos perfuminas__contenidoDos";
-}
-.perfuminas{
-    &__portada{
-        grid-area: perfuminas__portada;
-    }
-    &__titulo{
-        text-align: center;
-        font-size: 35px;
-        background-color: $color-navLink;
-        color:$color-textoPortada;
-    }
-    &__bloque{
-        grid-area: perfuminas__bloque;
-        margin-left: 1.5rem;
-    }
-    &__bloqueDos{
-        grid-area: perfuminas__bloqueDos;
-        margin-left: 1.5rem;
-    }
-    &__imagen{
-        width:45vw;
-        margin-top: 3rem;
-    }
-    &__contenido{
-        grid-area: perfuminas__contenido;
-        display: flex;
-        flex-direction: column;
-        margin-top: 3rem;
-        margin-right: 1.5rem;
-    }
-    &__contenidoDos{
-        grid-area: perfuminas__contenidoDos;
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-        margin-right: 1.5rem;
-    }
-    &__subtitulo{
-        padding-bottom: 20px;
-        font-size: 30px;
-        font-weight: 600;
-        align-self: center;
-    }
-    &__monto{
-        font-size: 30px;
-    }
-    &__subsubtitulo{
-        font-size: 23px;
-        padding-bottom: 1.5rem;
-        padding-top: 1.5rem;
-    }
-    &__selector{
-        width: 45vw;
-        height: 6vh;
-    }
-    &__boton{
-        margin-top: 2rem;
-        padding-right: 2.5rem;
-        font-size: 15px;
-        padding-left: 2.5rem;
-    }
-    &__boton:hover{
-        transform: scaley(1.1);
-    }
-}
-option{
-    font-size: 17px;
-} */
-
-/* termina css tienda*/
 /*css de novedades*/
 .grid-container{
     display: grid;
@@ -542,37 +457,29 @@ option{
     }
     &__titulo{
         font-size: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         text-align: center;
     }
-    
+    &__subtitulo{
+        margin-top: 1rem;
+        margin-bottom: 0.3rem;
+    }
     &__input{
-        margin-bottom:35px;
-        height: 5vh;
-        width: 35vw;
+        &:hover{
+            border-color: rgba(143, 64, 106, 0.493);
+            box-shadow: 5px 5px 20px rgba(143, 64, 106, 0.493);
+            transform: translateY(-1%);
+            transition: all 0.6s ease;
+        }
     }
     &__textarea{
-        width: 35vw;
         height: 15vh;
-        margin-top: 2rem;
-    }
-    &__boton{
-        margin-top: 1.5rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        font-size: 14px;
-    }
-    &__boton:hover{
-        transform: scale(1.1);
-    }
-    &__seleccion{
-        display: flex;
-       justify-content: space-between;
-    }
-    &__selector{
-        font-size: 14px;
-        & option{
-            font-size: 14px;
+        margin-bottom: 1rem;
+        &:hover{
+            border-color: rgba(143, 64, 106, 0.493);
+            box-shadow: 5px 5px 20px rgba(143, 64, 106, 0.493);
+            transform: translateY(-1%);
+            transition: all 0.6s ease;
         }
     }
 }

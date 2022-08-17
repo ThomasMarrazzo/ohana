@@ -517,21 +517,7 @@ option{
     &__titulo{
         font-size: 25px;
     }
-    &__input{
-        width: 65vw;
-    }
-    &__label{
-        font-size: 14px;
-    }
-    &__selector{
-        font-size: 14px;
-        & option{
-            font-size: 14px;
-        }
-    }
-    &__textarea{
-        width: 65vw;
-    }
+
 }
 .segundobloque{
     width: 100vw;
@@ -694,21 +680,7 @@ li{
     &__titulo{
         font-size: 28px;
     }
-    &__label{
-        font-size: 14px;
-    }
-    &__selector{
-        font-size: 14px;
-        & option{
-            font-size: 14px;
-        }
-    }
-    &__input{
-        width: 45vw;
-    }
-    &__textarea{
-        width: 45vw;
-    }
+
 }
 .segundobloque{
     &__texto{

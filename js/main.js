@@ -5,9 +5,6 @@ let carrito = [];
 
 botonComprar.addEventListener("click",() => {
     Swal.fire({
-        customClass: {
-            icon: "iconoComprar"
-        },
         position: 'center',
         icon: 'success',
         color: "rgb(166, 77, 124)",

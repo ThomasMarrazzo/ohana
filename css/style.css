@@ -247,89 +247,6 @@ body {
     background-color: rgba(255, 255, 255, 0.993);
     color: #a64d7c; }
 
-/* .inputCarrito{
-    width: 40px;
-    border: none;
-}
-.total{
-   font-size: 22px;
-   margin-left: 10px;
-} */
-/* .grid-tienda{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "perfuminas__portada perfuminas__portada"
-                        "perfuminas__bloque perfuminas__contenido"
-                        "perfuminas__bloqueDos perfuminas__contenidoDos";
-}
-.perfuminas{
-    &__portada{
-        grid-area: perfuminas__portada;
-    }
-    &__titulo{
-        text-align: center;
-        font-size: 35px;
-        background-color: $color-navLink;
-        color:$color-textoPortada;
-    }
-    &__bloque{
-        grid-area: perfuminas__bloque;
-        margin-left: 1.5rem;
-    }
-    &__bloqueDos{
-        grid-area: perfuminas__bloqueDos;
-        margin-left: 1.5rem;
-    }
-    &__imagen{
-        width:45vw;
-        margin-top: 3rem;
-    }
-    &__contenido{
-        grid-area: perfuminas__contenido;
-        display: flex;
-        flex-direction: column;
-        margin-top: 3rem;
-        margin-right: 1.5rem;
-    }
-    &__contenidoDos{
-        grid-area: perfuminas__contenidoDos;
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-        margin-right: 1.5rem;
-    }
-    &__subtitulo{
-        padding-bottom: 20px;
-        font-size: 30px;
-        font-weight: 600;
-        align-self: center;
-    }
-    &__monto{
-        font-size: 30px;
-    }
-    &__subsubtitulo{
-        font-size: 23px;
-        padding-bottom: 1.5rem;
-        padding-top: 1.5rem;
-    }
-    &__selector{
-        width: 45vw;
-        height: 6vh;
-    }
-    &__boton{
-        margin-top: 2rem;
-        padding-right: 2.5rem;
-        font-size: 15px;
-        padding-left: 2.5rem;
-    }
-    &__boton:hover{
-        transform: scaley(1.1);
-    }
-}
-option{
-    font-size: 17px;
-} */
-/* termina css tienda*/
 /*css de novedades*/
 .grid-container {
   display: grid;
@@ -508,30 +425,24 @@ option{
     width: 200px; }
   .seccioncontacto__titulo {
     font-size: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     text-align: center; }
-  .seccioncontacto__input {
-    margin-bottom: 35px;
-    height: 5vh;
-    width: 35vw; }
+  .seccioncontacto__subtitulo {
+    margin-top: 1rem;
+    margin-bottom: 0.3rem; }
+  .seccioncontacto__input:hover {
+    border-color: rgba(143, 64, 106, 0.493);
+    box-shadow: 5px 5px 20px rgba(143, 64, 106, 0.493);
+    transform: translateY(-1%);
+    transition: all 0.6s ease; }
   .seccioncontacto__textarea {
-    width: 35vw;
     height: 15vh;
-    margin-top: 2rem; }
-  .seccioncontacto__boton {
-    margin-top: 1.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    font-size: 14px; }
-  .seccioncontacto__boton:hover {
-    transform: scale(1.1); }
-  .seccioncontacto__seleccion {
-    display: flex;
-    justify-content: space-between; }
-  .seccioncontacto__selector {
-    font-size: 14px; }
-    .seccioncontacto__selector option {
-      font-size: 14px; }
+    margin-bottom: 1rem; }
+    .seccioncontacto__textarea:hover {
+      border-color: rgba(143, 64, 106, 0.493);
+      box-shadow: 5px 5px 20px rgba(143, 64, 106, 0.493);
+      transform: translateY(-1%);
+      transition: all 0.6s ease; }
 
 .segundobloque {
   margin-top: 5rem;
@@ -900,16 +811,6 @@ option{
     width: 40vw; }
   .seccioncontacto__titulo {
     font-size: 25px; }
-  .seccioncontacto__input {
-    width: 65vw; }
-  .seccioncontacto__label {
-    font-size: 14px; }
-  .seccioncontacto__selector {
-    font-size: 14px; }
-    .seccioncontacto__selector option {
-      font-size: 14px; }
-  .seccioncontacto__textarea {
-    width: 65vw; }
   .segundobloque {
     width: 100vw; }
     .segundobloque__subtitulo {
@@ -1018,16 +919,6 @@ option{
     width: 45vw; }
   .seccioncontacto__titulo {
     font-size: 28px; }
-  .seccioncontacto__label {
-    font-size: 14px; }
-  .seccioncontacto__selector {
-    font-size: 14px; }
-    .seccioncontacto__selector option {
-      font-size: 14px; }
-  .seccioncontacto__input {
-    width: 45vw; }
-  .seccioncontacto__textarea {
-    width: 45vw; }
   .segundobloque__texto {
     font-size: 15px;
     margin-left: 16px;
