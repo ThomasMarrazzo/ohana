@@ -99,7 +99,7 @@ body {
 .grid-tienda {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "perfuminas__portada perfuminas__portada perfuminas__portada perfuminas__portada" "bloque__uno bloque__dos bloque__tres bloque__cuatro" "bloque__cinco bloque__seis bloque__siete bloque__ocho" "carritoItem carritoItem carritoItem carritoItem" "comprarCards comprarCards comprarCards comprarCards"; }
+  grid-template-areas: "perfuminas__portada perfuminas__portada perfuminas__portada perfuminas__portada" "bloque__uno bloque__dos bloque__tres bloque__cuatro" "bloque__cinco bloque__seis bloque__siete bloque__ocho" "bloque__nueve bloque__diez bloque__once bloque__doce" "carritoItem carritoItem carritoItem carritoItem" "comprarCards comprarCards comprarCards comprarCards"; }
 
 .alert {
   z-index: 100; }
@@ -146,6 +146,26 @@ body {
   display: flex;
   justify-content: center;
   grid-area: bloque__ocho; }
+
+.bloque__nueve {
+  display: flex;
+  justify-content: center;
+  grid-area: bloque__nueve; }
+
+.bloque__diez {
+  display: flex;
+  justify-content: center;
+  grid-area: bloque__diez; }
+
+.bloque__once {
+  display: flex;
+  justify-content: center;
+  grid-area: bloque__once; }
+
+.bloque__doce {
+  display: flex;
+  justify-content: center;
+  grid-area: bloque__doce; }
 
 .description {
   font-size: 14px;
@@ -428,7 +448,7 @@ body {
     padding-bottom: 20px;
     text-align: center; }
   .seccioncontacto__subtitulo {
-    margin-top: 1rem;
+    margin-top: 0.7rem;
     margin-bottom: 0.3rem; }
   .seccioncontacto__input:hover {
     border-color: rgba(143, 64, 106, 0.493);

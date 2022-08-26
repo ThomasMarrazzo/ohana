@@ -96,6 +96,7 @@ body{
     grid-template-areas: "perfuminas__portada perfuminas__portada perfuminas__portada perfuminas__portada"
                         "bloque__uno bloque__dos bloque__tres bloque__cuatro"
                         "bloque__cinco bloque__seis bloque__siete bloque__ocho"
+                        "bloque__nueve bloque__diez bloque__once bloque__doce"
                         "carritoItem carritoItem carritoItem carritoItem"
                         "comprarCards comprarCards comprarCards comprarCards"
                         ;
@@ -145,6 +146,26 @@ body{
     display: flex;
     justify-content: center;
     grid-area: bloque__ocho;
+}
+.bloque__nueve{
+    display: flex;
+    justify-content: center;
+    grid-area: bloque__nueve;
+}
+.bloque__diez{
+    display: flex;
+    justify-content: center;
+    grid-area: bloque__diez;
+}
+.bloque__once{
+    display: flex;
+    justify-content: center;
+    grid-area: bloque__once;
+}
+.bloque__doce{
+    display: flex;
+    justify-content: center;
+    grid-area: bloque__doce;
 }
 .description{
     font-size: 14px;
@@ -461,7 +482,7 @@ margin-right: 20px
         text-align: center;
     }
     &__subtitulo{
-        margin-top: 1rem;
+        margin-top: 0.7rem;
         margin-bottom: 0.3rem;
     }
     &__input{
